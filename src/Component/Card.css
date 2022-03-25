@@ -1,0 +1,22 @@
+
+.card{
+    width: 280px;
+    height: 400px;
+    padding: 5px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    line-height: 10px;
+    border: 1px solid black;
+}
+.product-container{
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-img img{
+    width: 260px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+}

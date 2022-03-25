@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../../../Card';
 import Navbar from './Navbar/Navbar';
 
 const Shop = () => {
@@ -11,9 +12,15 @@ const Shop = () => {
     return (
         <div>
             <Navbar/>
+            <div className="product-container">
+
             {
-                products.map((product) => console.log(product.name))
+                products.map((product) => 
+                <div key={product.id}> 
+                  <Card data={product}/>  
+                </div>)
             }
+            </div>
         </div>
     );
 };
