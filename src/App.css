@@ -6,6 +6,19 @@
   height: 40vmin;
   pointer-events: none;
 }
+.card-info{
+    width: 280px;
+    color: #d63031;
+    margin-left: 50px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 20px #bebebe,
+             -10px -10px 20px #ffffff;
+}
+.card-info p{
+  padding: 10px;
+  line-height: 30px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

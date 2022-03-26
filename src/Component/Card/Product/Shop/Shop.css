@@ -22,13 +22,30 @@ body{
     box-shadow:  10px 10px 20px #bebebe,
              -10px -10px 20px #ffffff;
 }
+.item-img img{
+    width:100px;
+    height:80px;
+}
+.info-btn{
+    background-color: #6c5ce7;
+    width: 50%;
+    color: #ffff;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.info-btn:hover{
+    background-color: #fd79a8;
+}
 
 @media screen and (max-width: 600px){
     .product-container{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns:  1fr;
     }
-    .item-container{
-        display: grid;
+    /* .item-container{
+
         grid-template-columns: 1fr;
-    }
+    } */
 }
