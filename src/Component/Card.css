@@ -2,17 +2,29 @@
 .card{
     width: 280px;
     height: 400px;
-    padding: 5px;
+    margin-left: 50px;
     margin-top: 80px;
     margin-bottom: 50px;
     line-height: 10px;
-    border: 1px solid black;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 20px #bebebe,
+             -10px -10px 20px #ffffff;
 }
-.product-container{
-    display: grid;
-    gap:20px;
-    grid-template-columns: repeat(3, 1fr);
+.button{
+    background-color: #6c5ce7;
+    width: 100%;
+    color: #ffff;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .card-img img{
     width: 260px;
     height: 250px;
@@ -21,9 +33,5 @@
 }
 .icon{
     font-size: 24px;
-}
-@media screen and (max-width: 600px){
-    .product-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
+    color: red;
 }

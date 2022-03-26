@@ -15,7 +15,10 @@ const Card = ({data, handleAddToCart}) => {
             </div>
             <h2>{name}</h2>
             <h3>Price: {price}</h3>
-            <button onClick={() => handleAddToCart(data)}>Add To Cart <BsFillCartCheckFill className='icon'/> </button>
+            <button onClick={() => handleAddToCart(data)} className="button"> 
+            <p>Add To Cart</p>  
+            <BsFillCartCheckFill className='icon'/>  
+            </button>
         </div>
     );
 };
