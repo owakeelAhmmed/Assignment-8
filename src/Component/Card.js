@@ -1,11 +1,12 @@
 import React from 'react';
 import './Card.css';
+import {BsFillCartCheckFill} from 'react-icons/bs';
 
 
-
-const Card = ({data}) => {
+const Card = ({data, handleAddToCart}) => {
     const {name, image, price} = data;
-    console.log(name);
+
+   
     
     return (
         <div className="card">
@@ -14,7 +15,7 @@ const Card = ({data}) => {
             </div>
             <h2>{name}</h2>
             <h3>Price: {price}</h3>
-            <button>Add To Cart</button>
+            <button onClick={() => handleAddToCart(data)}>Add To Cart <BsFillCartCheckFill className='icon'/> </button>
         </div>
     );
 };
